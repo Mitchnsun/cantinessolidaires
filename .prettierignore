@@ -1,6 +1,0 @@
-# Ignore artifacts:
-.next
-.yarn
-node_modules
-build
-coverage
