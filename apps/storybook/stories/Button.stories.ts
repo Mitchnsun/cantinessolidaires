@@ -21,7 +21,6 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     appName: 'storybook',
-    primary: true,
     children: 'Button',
   },
 };
@@ -36,7 +35,6 @@ export const Secondary: Story = {
 export const Warning: Story = {
   args: {
     appName: 'storybook',
-    primary: true,
     children: 'Delete now',
   },
 };

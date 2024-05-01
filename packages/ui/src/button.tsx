@@ -1,21 +1,21 @@
 'use client';
 
+import clsx from 'clsx';
 import { ReactNode } from 'react';
 
 interface ButtonProps {
   children: ReactNode;
   className?: string;
-  primary?: boolean;
   size?: 'small' | 'large';
   appName: string;
 }
 
-export const Button = ({ children, className, primary, size, appName }: ButtonProps) => {
+export const Button = ({ children, className, size, appName }: ButtonProps) => {
+  const classes = clsx('bg-primary text-white', className);
   return (
     <button
-      className={className}
+      className={classes}
       style={{
-        backgroundColor: primary ? 'red' : 'blue',
         fontSize: size === 'large' ? '24px' : '14px',
       }}
       onClick={() => alert(`Hello from your ${appName} app!`)}
