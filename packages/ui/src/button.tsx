@@ -6,20 +6,13 @@ import { ReactNode } from 'react';
 interface ButtonProps {
   children: ReactNode;
   className?: string;
-  size?: 'small' | 'large';
-  appName: string;
+  onClick?: () => void;
 }
 
-export const Button = ({ children, className, size, appName }: ButtonProps) => {
-  const classes = clsx('bg-primary text-white', className);
+export const Button = ({ children, className, onClick = () => {} }: ButtonProps) => {
+  const classes = clsx('bg-primary rounded px-6 py-3 text-white hover:bg-blue-500', className);
   return (
-    <button
-      className={classes}
-      style={{
-        fontSize: size === 'large' ? '24px' : '14px',
-      }}
-      onClick={() => alert(`Hello from your ${appName} app!`)}
-    >
+    <button className={classes} onClick={onClick}>
       {children}
     </button>
   );

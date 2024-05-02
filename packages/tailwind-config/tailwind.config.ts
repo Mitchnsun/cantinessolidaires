@@ -3,6 +3,7 @@ import colors from 'tailwindcss/colors';
 
 // We want each package to be responsible for its own content.
 const config: Omit<Config, 'content'> = {
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     colors: {
       ...colors,
