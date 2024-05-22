@@ -1,9 +1,9 @@
-import { baloo } from '../styles/fonts';
+import { HeroBanner } from '@/components/HeroBanner';
 
 export default function Page(): JSX.Element {
   return (
     <main>
-      <h1 className={baloo.className}>Cantines Solidaires</h1>
+      <HeroBanner />
     </main>
   );
 }

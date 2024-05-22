@@ -1,15 +1,16 @@
 import type { Config } from 'tailwindcss';
 import colors from 'tailwindcss/colors';
+import plugin from 'tailwindcss/plugin';
 
 // We want each package to be responsible for its own content.
 const config: Omit<Config, 'content'> = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     colors: {
-      ...colors,
       transparent: 'transparent',
       current: 'currentColor',
       primary: '#0092D6',
+      black: colors.black,
       blue: {
         '50': '#f0f9ff',
         '100': '#e0f3fe',
@@ -23,8 +24,41 @@ const config: Omit<Config, 'content'> = {
         '900': '#0b4c6f',
         '950': '#07304a',
       },
+      gray: {
+        '50': '#f6f6f6',
+        '100': '#e7e7e7',
+        '200': '#d1d1d1',
+        '300': '#b0b0b0',
+        '400': '#888888',
+        '500': '#6d6d6d',
+        '600': '#5d5d5d',
+        '700': '#4f4f4f',
+        '800': '#474747',
+        '900': '#3d3d3d',
+        '950': '#262626',
+      },
+      red: colors.red,
+      orange: colors.orange,
+      green: colors.green,
+      white: colors.white,
+    },
+    textShadow: {
+      sm: '0 1px 2px #000',
+      DEFAULT: '0 2px 4px #000',
+      lg: '0 8px 16px #000',
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') }
+      )
+    }),
+  ],
 };
 export default config;

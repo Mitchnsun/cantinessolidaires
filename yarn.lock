@@ -12418,16 +12418,21 @@ __metadata:
   dependencies:
     "@next/eslint-plugin-next": "npm:^14.1.1"
     "@repo/eslint-config": "npm:*"
+    "@repo/tailwind-config": "npm:*"
     "@repo/typescript-config": "npm:*"
     "@repo/ui": "npm:*"
     "@types/eslint": "npm:^8.56.10"
     "@types/node": "npm:^20.11.24"
     "@types/react": "npm:^18.2.61"
     "@types/react-dom": "npm:^18.2.19"
+    autoprefixer: "npm:^10.4.19"
+    clsx: "npm:^2.1.1"
     eslint: "npm:^8.57.0"
     next: "npm:^14.1.1"
+    postcss: "npm:^8.4.38"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
+    tailwindcss: "npm:^3.4.3"
     typescript: "npm:^5.3.3"
   languageName: unknown
   linkType: soft
