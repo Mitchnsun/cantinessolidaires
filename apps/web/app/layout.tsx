@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-
+import { Footer } from '@/components/Footer';
+import { roboto } from '@/styles/fonts';
 import './globals.css';
-import { roboto } from '../styles/fonts';
 
 export const metadata: Metadata = {
   title: 'Cantines Solidaires',
@@ -12,7 +12,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }): JSX.Element {
   return (
     <html lang="fr">
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

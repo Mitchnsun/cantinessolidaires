@@ -30,6 +30,7 @@ body {
 body {
   color: var(--text-color);
   background: var(--background-color);
+  font-weight: 300;
 }
 
 a {
