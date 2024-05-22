@@ -1,7 +1,7 @@
 'use client';
 
-import clsx from 'clsx';
 import { ReactNode } from 'react';
+import clsx from 'clsx';
 
 interface ButtonProps {
   children: ReactNode;

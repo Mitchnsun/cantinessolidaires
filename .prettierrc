@@ -1,6 +1,8 @@
 {
+  "importOrder": ["react", "<THIRD_PARTY_MODULES>", "^@repo/(.*)$", "^@/(.*)$", "^[./]"],
+  "importOrderCaseInsensitive": true,
   "printWidth": 120,
-  "plugins": ["prettier-plugin-tailwindcss"],
+  "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
   "singleQuote": true,
   "tailwindFunctions": ["clsx"],
   "trailingComma": "all"
