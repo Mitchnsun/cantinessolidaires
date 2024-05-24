@@ -4,7 +4,7 @@ import { Layout } from '@/components/Layout';
 
 const Footer = (): JSX.Element => (
   <footer className="bg-blue-600 text-justify text-white md:text-left">
-    <Layout className="flex flex-col items-center gap-8 p-4 md:flex-row md:gap-16 md:p-8 lg:p-12">
+    <Layout className="flex flex-col items-center gap-8 md:flex-row md:gap-16 md:p-8 lg:p-12">
       <div>
         <Logo backgroundClass="fill-blue-600" className="m-auto w-60 md:m-0" />
         <p className="mt-4">
