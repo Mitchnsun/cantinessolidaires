@@ -3,7 +3,7 @@ import { Layout } from '@/components/Layout';
 
 const HomeContent4 = () => (
   <div className="bg-gray-50">
-    <Layout className="flex flex-col items-center gap-6 lg:flex-row">
+    <Layout className="flex flex-col items-center gap-6 md:py-4 lg:flex-row lg:py-0">
       <section className="lg:w-1/2">
         <h2 className="text-3xl font-medium text-gray-800 lg:text-4xl">Un fonctionnement transparent</h2>
         <p className="mt-4 text-justify">
