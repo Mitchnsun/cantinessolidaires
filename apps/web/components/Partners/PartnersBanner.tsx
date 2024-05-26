@@ -2,11 +2,10 @@
 
 import Image from 'next/image';
 import { Layout } from '@/components/Layout';
-import useBreakpoints from '@/hooks/useBreakpoints';
+import useImageSize from '@/hooks/useImageSize';
 
 const PartnersBanner = () => {
-  const { isSm } = useBreakpoints();
-  const imageSize = isSm ? 2 : 1;
+  const imageSize = useImageSize();
 
   return (
     <div className="bg-gray-50">
