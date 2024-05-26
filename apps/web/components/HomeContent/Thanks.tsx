@@ -11,7 +11,7 @@ const Thanks = () => (
       Cantines Solidaires a été créée grâce à l’implication de plusieurs bénévoles qui nous permettent de garder nos
       frais de fonctionnement le plus bas possible.
     </p>
-    <ul className="m-auto flex list-disc flex-col gap-2 lg:w-4/5">
+    <ul className="m-auto flex list-disc flex-col gap-2 px-4 lg:w-4/5">
       <li>
         Merci à <strong className="font-extrabold">Vincent Gobil</strong> de Vektor Graphik pour l’optimisation de notre
         logo et des étiquettes qui accompagnent les produits qui participent à l’opération.
