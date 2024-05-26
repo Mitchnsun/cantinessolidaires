@@ -5,9 +5,7 @@ const HomeContent2 = () => (
   <div className="bg-gray-50">
     <Layout className="flex flex-col items-center gap-6 md:flex-row">
       <section>
-        <h2 className="text-3xl font-medium text-gray-800 lg:text-4xl">
-          Un alliance avec le Secours Populaire d’Agen !
-        </h2>
+        <h2 className="text-3xl font-medium text-gray-800 lg:text-4xl">Un alliance avec le Secours Populaire d’Agen</h2>
         <p className="mt-4 text-justify">
           Les entreprises partenaires qui vendent des produits dans les grandes et moyennes surfaces s'engagent à
           consacrer une partie de leurs revenus pour rendre la cantine scolaire accessible à tous. À chaque achat d'un

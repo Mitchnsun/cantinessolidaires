@@ -18,7 +18,7 @@ const HomeContent1 = () => (
         <p className="text-sm">La cantine représente 38 % des repas du midi pris par des enfants durant l’année</p>
       </div>
     </div>
-    <section className="py-4 lg:py-8">
+    <section className="mt-8">
       <h2 className="text-3xl font-medium text-gray-800 lg:text-4xl">
         La pause déjeuner à l'école est très importante pour les enfants !
       </h2>

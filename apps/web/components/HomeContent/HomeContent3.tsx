@@ -10,7 +10,7 @@ const HomeContent3 = () => {
   return (
     <Layout>
       <h2 className="text-3xl font-medium text-gray-800 lg:text-4xl">Comment nous soutenir ?</h2>
-      <p className="my-6 text-justify md:w-2/3">
+      <p className="my-4 text-justify md:w-2/3">
         Pour soutenir Cantines Solidaires et aider les enfants défavorisés à accéder à la cantine scolaire.
       </p>
       <div className="flex items-center gap-6">
@@ -25,7 +25,7 @@ const HomeContent3 = () => {
           bénéfices sera dédiée à financer la cantine d’enfants dans le besoin.
         </p>
       </div>
-      <p className="mt-6 text-justify">
+      <p className="mt-4 text-justify">
         Chaque contribution, quelle que soit sa forme, contribue à rendre la cantine scolaire accessible aux enfants
         issus de familles démunies et à leur offrir une alimentation saine et équilibrée.
       </p>
